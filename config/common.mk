@@ -1,3 +1,4 @@
+
 PRODUCT_BRAND ?= LineageOS
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
@@ -72,6 +73,9 @@ PRODUCT_COPY_FILES += \
 # Enable wireless Xbox 360 controller support
 PRODUCT_COPY_FILES += \
     frameworks/base/data/keyboards/Vendor_045e_Product_028e.kl:system/usr/keylayout/Vendor_045e_Product_0719.kl
+
+# Include Kali stuff
+include vendor/cm/config/kali.mk)
 
 # This is CM!
 PRODUCT_COPY_FILES += \
